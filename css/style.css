@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* inizio container big */
+
+.container-big{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav{
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: black;
+}
+
+main{
+    width: calc(100% - 250px);
+    background-color: greenyellow;
+}
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: blue;
+
+}
