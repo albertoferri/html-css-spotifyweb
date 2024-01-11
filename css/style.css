@@ -24,6 +24,72 @@ nav{
     height: calc(100vh - 100px);
     background-color: black;
 }
+
+.img-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 20px;
+}
+
+.img-logo img{
+    width: 48px;
+    height: auto;
+}
+
+.img-logo h1{
+    color: white;
+    font-size: 26px;
+}
+
+/* inizio sezione search */
+
+
+.search .search-btn{
+    padding: 10px;
+    color: white;
+}
+
+.fa-solid{
+    padding-right: 6px;
+}
+/* fine sezione search */
+
+/* sezione playlist */
+
+.playlist, .search{
+    padding: 10px;
+    font-weight: 700;
+}
+
+.new-playlist{
+    color: white;
+    margin: 10px;
+    height: 45px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fa-plus{
+    background-color: #a3a3a3;
+    padding: 10px 11.5px;
+    font-size: 24px;
+    color: black;
+}
+
+.name-playlist{
+    color: #707070;
+    padding: 5px 5px 5px 10px;
+}
+
+
+
+
+
+
 /* fine navbar */
 
 /* inizio main */
@@ -72,10 +138,13 @@ main{
 .played, .create-for, .popular-artist{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
+    /* justify-content: space-between; */
+    gap: 10px;
     padding: 20px;
+    
 }
+
+
 
 .create-for, .popular-artist{
     justify-content: flex-start;
@@ -96,6 +165,8 @@ h3{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    
+    max-width: calc(100% / 6 - 10px);
 }
 
 .album-img img{
@@ -159,3 +230,9 @@ footer{
 
 
 /* fine footer */
+
+
+/* stilizzazione media query 992px */
+@media screen and (max-width: 992px){
+
+}
