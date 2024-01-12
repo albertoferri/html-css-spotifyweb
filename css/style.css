@@ -254,7 +254,75 @@ footer{
     bottom: 0;
     left: 0;
     z-index: 2;
+
+    padding: 20px;
+    color: white;
     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-track{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.player-track img{
+    height: 60px;
+    width: auto;
+
+}
+
+.track{
+    font-size: smaller;
+}
+
+.track span:nth-of-type(2){
+    color: grey;
+}
+
+.action-btn *{
+    padding: 5px;
+}
+
+.player-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 2;
+}
+
+.player-btn{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.player-btn .fa-solid{
+    font-size: 22px;
+}
+
+progress{
+    filter: invert(1);
+    width: 80%;
+}
+
+.player-bar progress{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.player-set{
+    display: flex;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+footer .fa-solid{
+    padding: 0;
 }
 
 
