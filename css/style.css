@@ -183,13 +183,7 @@ main{
     font-size: 30px;
 }
 
-.album-img .fa-play:hover{
-    display: block;
-    justify-content: center;
-    align-items: center;
 
-    color: white;
-}
 
 
 
@@ -373,12 +367,12 @@ footer .fa-solid{
 
 *:hover{
     transition-duration: .1s;
-    cursor: pointer;
 }
 
 .upgrade span:hover{
     font-size: 17px;
     transition-duration: .3s;
+    cursor: pointer;
 }
 .upgrade span:not(:hover){
     font-size: 16px;
@@ -388,18 +382,38 @@ footer .fa-solid{
 
 .top-bar-main a:hover{
     border-bottom: #28BF5C 3px solid;
-
+    cursor: pointer;
+    
 }
 .top-bar-main a:not(:hover){
     border-bottom: none;
-
+    opacity: .7;
 }
 
 .search-btn:hover{
     border-left:  #28BF5C 3px solid;
+    cursor: pointer;
+}
+
+.search-btn:not(:hover){
+    opacity: .7;
 
 }
 
+.name.playlist:not(:hover){
+    opacity: .7;
+}
+
+
+/* play on hover on album */
+
+.album-img .fa-play:hover{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
 
 
 
