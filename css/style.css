@@ -283,13 +283,14 @@ footer{
 
 .player-track, .player-bar, .player-set{
     padding: 10px;
+    width: 20%;
+
 }
 
 .player-track{
     display: flex;
     gap: 10px;
     align-items: center;
-    flex-grow: 1;
 }
 
 .player-track img{
@@ -314,7 +315,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex-grow: 2;
+    width: 50%;
 }
 
 .player-btn{
@@ -338,7 +339,7 @@ progress{
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-grow: 1;
+    width: 20%;
 }
 
 .player-set .action-btn{
