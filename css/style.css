@@ -263,6 +263,10 @@ footer{
     align-items: center;
 }
 
+.player-track, .player-bar, .player-set{
+    padding: 10px;
+}
+
 .player-track{
     display: flex;
     gap: 10px;
@@ -297,7 +301,7 @@ footer{
 
 .player-btn{
     display: flex;
-    gap: 25px;
+    gap: 35px;
     justify-content: center;
 }
 
@@ -310,19 +314,34 @@ progress{
     width: 80%;
 }
 
-.player-bar progress{
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 .player-set{
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
     flex-grow: 1;
+}
+
+.player-set .action-btn{
+    width: 75px;
+
+    display: flex;
+    gap: 8px;
 }
 
 footer .fa-solid{
     padding: 0;
+}
+
+.bar-set{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bar-set label{
+    font-size: small;
 }
 
 
@@ -351,6 +370,14 @@ footer .fa-solid{
 
     .album{
         width: calc(100% / 2 - 10px);
+    }
+
+    .player-set{
+        flex-direction: column;
+    }
+
+    .player-btn{
+        gap: 20px;
     }
 
 }
@@ -395,6 +422,11 @@ footer .fa-solid{
 
     .upgrade{
         width: calc(100% - 50px);
+    }
+
+    .player-track .action-btn{
+        display: flex;
+        flex-direction: column;
     }
 
 
