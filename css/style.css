@@ -158,6 +158,7 @@ main{
     text-decoration: none;
     color: white;
     font-weight: 700;
+    border-bottom: #28bf5d00 2px solid;
 }
 
 
@@ -171,15 +172,18 @@ main{
     
 }
 
-.album-img .fa-play{
-    display: none;
-    color: white;
+.album-img{
     position: relative;
-    bottom: 50%;
+}
+
+.album-img .fa-play{
+    color: white;
+    position: absolute;
+    bottom: 40%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-40%);
     padding: 0;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 
@@ -364,9 +368,7 @@ footer .fa-solid{
 
 /* stilizzazione hover */
 
-*:hover{
-    transition-duration: .1s;
-}
+
 
 .upgrade span:hover{
     font-size: 17px;
@@ -380,13 +382,14 @@ footer .fa-solid{
 
 
 .top-bar-main a:hover{
-    border-bottom: #28BF5C 3px solid;
     cursor: pointer;
+    border-bottom: #28BF5C 2px solid;
     
 }
 .top-bar-main a:not(:hover){
-    border-bottom: none;
     opacity: .7;
+    border-bottom: #28bf5d00 2px solid;
+
 }
 
 .search-btn:hover{
@@ -414,17 +417,19 @@ footer .fa-solid{
 
 /* play on hover on album */
 
-.album-img .fa-play:hover{
-    display: block;
-    justify-content: center;
-    align-items: center;
 
-    color: white;
-}
+.hover-icon {
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
 
-
-
-
+  .album-img:hover .hover-icon{
+    opacity: 1;
+  }
 
 
 
