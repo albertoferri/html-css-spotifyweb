@@ -14,7 +14,6 @@ body{
 .container-big{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 /* inizio navbar */
@@ -57,6 +56,7 @@ nav{
 .fa-solid{
     padding-right: 6px;
 }
+
 /* fine sezione search */
 
 /* sezione playlist */
@@ -109,7 +109,6 @@ nav{
     color: white;
 }
 
-
 /* fine navbar */
 
 /* inizio main */
@@ -161,8 +160,6 @@ main{
     border-bottom: #28bf5d00 2px solid;
 }
 
-
-
 .played, .create-for, .popular-artist{
     display: flex;
     flex-wrap: wrap;
@@ -185,13 +182,6 @@ main{
     padding: 0;
     font-size: 50px;
 }
-
-
-
-
-
-
-
 
 .create-for, .popular-artist{
     justify-content: flex-start;
@@ -220,7 +210,6 @@ h3{
 
 .album-img img{
     width: 100%;
-    
 }
 
 .name-album{
@@ -230,11 +219,7 @@ h3{
     font-weight: 700;
 }
 
-
-
-
 .name-artist{
-    /* test */
     max-width: 170px;
     color: grey;
     font-size: small;
@@ -242,23 +227,17 @@ h3{
 }
 
 .artist-img img{
-    /* test */
     width: 170px;
     height: 170px;
     border-radius: 50%;
 }
 
 .artist .name-artist{
-        color: white;
-        font-weight: 700;
+    color: white;
+    font-weight: 700;
 }
 
-
-
-
-
 /* fine main */
-
 
 
 /* inizio footer */
@@ -369,12 +348,27 @@ footer .fa-solid{
 
 /* stilizzazione hover */
 
-
+.name-album, 
+.name-artist,
+.img-logo img,
+.new-playlist i,
+.album-img img,
+.login,
+.download,
+.upgrade span,
+.top-bar-main a,
+.search-btn,
+.player-track span,
+.player-track img,
+.player-btn .fa-solid,
+.action-btn,
+progress{
+    cursor: pointer;
+}
 
 .upgrade span:hover{
     font-size: 17px;
     transition-duration: .3s;
-    cursor: pointer;
 }
 .upgrade span:not(:hover){
     font-size: 16px;
@@ -383,7 +377,6 @@ footer .fa-solid{
 
 
 .top-bar-main a:hover{
-    cursor: pointer;
     border-bottom: #28BF5C 2px solid;
     transition: .2s ease-in;
 }
@@ -395,7 +388,6 @@ footer .fa-solid{
 
 .search-btn:hover{
     border-left:  #28BF5C 3px solid;
-    cursor: pointer;
 }
 
 .search-btn:not(:hover){
@@ -409,7 +401,6 @@ footer .fa-solid{
 
 .download:hover{
     color: white;
-    cursor: pointer;
 }
 
 .download:not(:hover){
@@ -425,12 +416,30 @@ footer .fa-solid{
     left: 50%;
     transform: translate(-50%);
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-  }
+    transition: opacity 0.1s ease-in-out;
+    cursor: pointer;
+}
 
-  .album-img:hover .hover-icon{
+.album-img:hover .hover-icon{
     opacity: 1;
-  }
+}
+
+/* hover border transition */
+
+.album img:hover, 
+.popular-artist img:hover{
+    border: #28bf5d62 3px solid;
+    transition: .1s ease-in-out;
+}
+
+img:not(:hover){
+    transition: .1s ease-in-out;
+}
+
+
+.album img:hover{
+    border-radius: 10px;
+}
 
 
 
@@ -445,8 +454,6 @@ footer .fa-solid{
     .album{
         min-width: 160px;
     }
-
-
 
 }
 
@@ -552,9 +559,6 @@ footer .fa-solid{
         padding: 20px;
     }
 
-
-    
-
     .popular-artist{
         width: 100%;
     }
@@ -608,14 +612,7 @@ footer .fa-solid{
         overflow-y: auto;
     }
 
-
-
     .search-btn{
-        padding: 5px;
-
-    }
-
-    .container-nav-bottom{
         padding: 5px;
 
     }
@@ -628,8 +625,6 @@ footer .fa-solid{
     .login .fa-solid{
         padding-left: 2px;
     }
-
-
 
     .search-btn .fa-solid{
         font-size: 22px;
