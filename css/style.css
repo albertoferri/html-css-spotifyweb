@@ -356,7 +356,7 @@ footer .fa-solid{
 .bar-set{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .bar-set label{
@@ -385,7 +385,7 @@ footer .fa-solid{
 .top-bar-main a:hover{
     cursor: pointer;
     border-bottom: #28BF5C 2px solid;
-    
+    transition: .2s ease-in;
 }
 .top-bar-main a:not(:hover){
     opacity: .7;
@@ -466,6 +466,10 @@ footer .fa-solid{
         gap: 20px;
     }
 
+    .bar-set{
+        gap: 10px;
+    }
+
 }
 
 
@@ -515,13 +519,16 @@ footer .fa-solid{
         flex-direction: column;
     }
 
+    .player-bar{
+        margin-left: 70px;
+    }
 
 }
 
 
 
 /* stilizzazione media query 420px */
-@media screen and (max-width: 420px){
+@media screen and (max-width: 429px){
 
     .top-bar-main{
         padding: 20px 20px 0 20px;
@@ -530,6 +537,7 @@ footer .fa-solid{
     .played, .popular-artist, .create-for{
         gap: 30px;
     }
+
 
     .album{
         width: 100%;
@@ -544,8 +552,112 @@ footer .fa-solid{
         padding: 20px;
     }
 
+
+    
+
     .popular-artist{
         width: 100%;
+    }
+
+    .player-track .fa-regular{
+        padding-left: 0;
+    }
+
+    .player-track img{
+        height: 50px;
+        height: 50px;
+    }
+
+    .player-track span{
+        display: none;
+    }
+
+    .player-track{
+        padding-left: 0;
+        gap: 5px;
+    }
+
+    .player-btn{
+        gap: 30px;
+    }
+
+    .player-bar{
+        margin: 0;
+
+        flex-grow: 2;
+    }
+
+    .bar-set{
+        gap: 5px;
+    }
+
+    .bar-set label{
+        display: none;
+    }
+
+    .player-set{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-height:505px)
+and (max-width:634px)
+{
+
+    nav{
+        overflow-y: auto;
+    }
+
+    nav *{
+        max-width: 40px;
+    }
+
+    .container-nav-top img{
+        width: 23px;
+        height: auto;
+    }
+
+    .container-nav-top .img-logo{
+        min-width: 25px;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .search-btn{
+        padding: 5px;
+
+    }
+
+    .container-nav-bottom{
+        padding: 5px;
+
+    }
+
+    .container-nav-bottom .fa-solid,
+    .login .fa-solid{
+        font-size: 22px;
+    }
+
+    .login .fa-solid{
+        padding-left: 2px;
+    }
+
+
+
+    .search-btn .fa-solid{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .player-bar{
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .search-btn:hover{
+        border: none;
     }
 
 }
