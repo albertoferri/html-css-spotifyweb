@@ -308,7 +308,6 @@ footer{
 }
 
 progress{
-    filter: invert(1);
     width: 80%;
 }
 
@@ -328,6 +327,12 @@ progress{
     gap: 8px;
 }
 
+.action-btn .fa-regular,
+.player-set .fa-solid,
+.new-playlist{
+    opacity: .7;
+}
+
 footer .fa-solid{
     padding: 0;
 }
@@ -336,6 +341,7 @@ footer .fa-solid{
     display: flex;
     justify-content: center;
     gap: 15px;
+    align-items: center;
 }
 
 .bar-set label{
@@ -351,8 +357,9 @@ footer .fa-solid{
 .name-album, 
 .name-artist,
 .img-logo img,
-.new-playlist i,
+.new-playlist,
 .album-img img,
+.name-playlist,
 .login,
 .download,
 .upgrade span,
@@ -395,8 +402,17 @@ progress{
 
 }
 
+.name-playlist:hover{
+    color: white;
+    transition: .2s ease-in-out;
+}
+
 .name.playlist:not(:hover){
     opacity: .7;
+}
+
+.new-playlist .fa-solid:not(:hover){
+    transition-duration: .2s;
 }
 
 .download:hover{
@@ -404,7 +420,22 @@ progress{
 }
 
 .download:not(:hover){
-    transition-duration: .3s;
+    transition-duration: .2s;
+}
+
+.action-btn .fa-regular:hover,
+.player-set .fa-solid:hover,
+.new-playlist:hover{
+    opacity: 1;
+}
+
+.track span:nth-of-type(2):hover{
+    text-decoration: underline;
+}
+
+#file:hover{
+    background-color: #28BF5C;
+    max-height: 10px;
 }
 
 /* play on hover on album */
@@ -424,9 +455,10 @@ progress{
     opacity: 1;
 }
 
+
 /* hover border transition */
 
-.album img:hover, 
+/* .album img:hover, 
 .popular-artist img:hover{
     border: #28bf5d62 3px solid;
     transition: .1s ease-in-out;
@@ -439,7 +471,7 @@ img:not(:hover){
 
 .album img:hover{
     border-radius: 10px;
-}
+} */
 
 
 
@@ -451,8 +483,9 @@ img:not(:hover){
         flex-wrap: wrap;
     }
 
+
     .album{
-        min-width: 160px;
+        width: calc(100% / 4 - 10px);
     }
 
 }
