@@ -451,12 +451,18 @@ progress{
     cursor: pointer;
 }
 
+.album-img:hover{
+    opacity: 0.4;
+}
+
 .album-img:hover .hover-icon{
     opacity: 1;
 }
 
 
 /* hover border transition */
+
+
 
 /* .album img:hover, 
 .popular-artist img:hover{
