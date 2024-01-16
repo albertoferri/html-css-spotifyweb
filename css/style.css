@@ -278,7 +278,7 @@ footer{
 
 }
 
-.track{
+.track, .elapsed-time,.total-time{
     font-size: smaller;
 }
 
@@ -306,11 +306,6 @@ footer{
 .player-btn .fa-solid{
     font-size: 22px;
 }
-
-progress{
-    width: 80%;
-}
-
 
 
 .player-set{
@@ -344,9 +339,48 @@ footer .fa-solid{
     align-items: center;
 }
 
-.bar-set label{
-    font-size: small;
+footer .bar{
+
+    width: 100%;
+    height: 6px;
+    background-color: #5a5a5a;
+
+    border-radius: 3px;
 }
+
+footer .progress-bar{
+    position: relative;
+
+    width: calc(35%);
+    height: 100%;
+
+    background-color: #c0c0c0;
+
+    border-radius: 3px;
+}
+
+/* aggiunta handle nella progress bar */
+footer .bar .progress-bar::before {
+    
+    content: '';
+    
+    display: none;
+    
+    position: absolute;
+    right: 0;
+    
+    width: 10px;
+    height: 10px;
+    
+    transform: translateX(25%) translateY(-25%);
+    
+    background-color:  white;
+
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 4px #00000080;
+}
+
 
 
 /* fine footer */
@@ -368,8 +402,7 @@ footer .fa-solid{
 .player-track span,
 .player-track img,
 .player-btn .fa-solid,
-.action-btn,
-progress{
+.action-btn{
     cursor: pointer;
 }
 
@@ -429,13 +462,12 @@ progress{
     opacity: 1;
 }
 
-.track span:nth-of-type(2):hover{
-    text-decoration: underline;
+footer .bar:hover .progress-bar{
+    background-color: #1db854;
 }
 
-#file:hover{
-    background-color: #28BF5C;
-    max-height: 10px;
+footer .bar:hover .progress-bar::before {
+    display: block;
 }
 
 /* play on hover on album */
@@ -458,26 +490,6 @@ progress{
 .album-img:hover .hover-icon{
     opacity: 1;
 }
-
-
-/* hover border transition */
-
-
-
-/* .album img:hover, 
-.popular-artist img:hover{
-    border: #28bf5d62 3px solid;
-    transition: .1s ease-in-out;
-}
-
-img:not(:hover){
-    transition: .1s ease-in-out;
-}
-
-
-.album img:hover{
-    border-radius: 10px;
-} */
 
 
 
